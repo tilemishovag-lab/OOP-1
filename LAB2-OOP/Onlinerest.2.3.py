@@ -1,4 +1,4 @@
-from menu_models import ComboSet, Drink, Pizza
+from Onlinerest import ComboSet, Drink, Pizza
 from order_system import CardPayment, CashPayment, Order
 
 print("--- 1. Создание заказа и наполнение корзины ---")
