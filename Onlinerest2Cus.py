@@ -8,7 +8,7 @@ class Order:
 
   def __init__(self):
     self.__items: list[MenuItem] = []
-    self.__status_index: int = 0  # Скрытый индекс статуса
+    self.__status_index: int = 0  
 
   @property
   def status(self) -> str:
