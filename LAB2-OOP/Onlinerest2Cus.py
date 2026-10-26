@@ -8,7 +8,7 @@ class Order:
 
   def __init__(self):
     self.__items: list[MenuItem] = []
-    self.__status_index: int = 0  # Скрытый индекс статуса
+    self.__status_index: int = 0 
 
   @property
   def status(self) -> str:
@@ -43,7 +43,7 @@ class Order:
     success = payment_method.collect_payment(total)
 
     if success and self.status == "CREATED":
-      self.next_step()  # Переход в PREPARING при успешной оплате
+      self.next_step() 
     return success
 
 
@@ -58,7 +58,7 @@ class CardPayment(PaymentStrategy):
 
   def __init__(self, card_number: str, expiry_date: str):
     self.__card_number = card_number
-    self.expiry_date = expiry_date  # Формат "MM/YY"
+    self.expiry_date = expiry_date 
 
   def collect_payment(self, amount: float) -> bool:
     print(
