@@ -29,5 +29,5 @@ except ValueError as e:
   print(e)
 
 print("\n--- 4. Дальнейшие шаги доставки ---")
-my_order.next_step()  # Переход в READY
-my_order.next_step()  # Переход в DELIVERED
+my_order.next_step()  
+my_order.next_step()  
