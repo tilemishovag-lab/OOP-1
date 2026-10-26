@@ -59,7 +59,7 @@ class ComboSet(MenuItem):
 
     def calculate_price(self) -> float:
         total = sum(item.calculate_price() for item in self.items)
-        return total * 0.85 
+        return total * 0.85  
 
     def get_display_name(self) -> str:
         sub_items = ", ".join([i.get_display_name() for i in self.items])
