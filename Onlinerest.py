@@ -26,7 +26,7 @@ class Pizza(MenuItem):
 
   def calculate_price(self) -> float:
     if self.size.lower() == "large":
-      return self.base_price * 1.3  # Увеличивает базовую цену на 30%
+      return self.base_price * 1.3  
     return self.base_price
 
   def get_display_name(self) -> str:
@@ -40,7 +40,7 @@ class Drink(MenuItem):
     self.is_ice = is_ice
 
   def calculate_price(self) -> float:
-    return self.base_price  # Цена от льда не меняется
+    return self.base_price  
 
   def get_display_name(self) -> str:
     if self.is_ice:
