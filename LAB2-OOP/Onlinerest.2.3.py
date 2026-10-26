@@ -5,7 +5,7 @@ print("--- 1. Создание заказа и наполнение корзин
 my_order = Order()
 print(f"Начальный статус заказа: {my_order.status}")
 
-pizza_large = Pizza("Пепперони", 600.0, size="large")  
+pizza_large = Pizza("Пепперони", 600.0, size="large") 
 cola = Drink("Кока-кола", 150.0, is_ice=True)
 
 combo = ComboSet("Обед")
