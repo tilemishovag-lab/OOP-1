@@ -58,7 +58,7 @@ class CardPayment(PaymentStrategy):
 
     def __init__(self, card_number: str, expiry_date: str):
         self.__card_number = card_number
-        self.expiry_date = expiry_date  # Формат "MM/YY"
+        self.expiry_date = expiry_date  
 
     def collect_payment(self, amount: float) -> bool:
         print(
