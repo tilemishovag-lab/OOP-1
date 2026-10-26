@@ -1,5 +1,5 @@
 from Onlinerest import ComboSet, Drink, Pizza
-from order_system import CardPayment, CashPayment, Order
+from Onlinerest2Cus import CardPayment, CashPayment, Order
 
 print("--- 1. Создание заказа и наполнение корзины ---")
 my_order = Order()
